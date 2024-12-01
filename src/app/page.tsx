@@ -120,56 +120,7 @@ function CaseStudies({
   )
 }
 
-function Services() {
-  return (
-    <>
-      <SectionIntro
-        eyebrow="Serviços"
-        title="Apoiamos iniciativas sociais com soluções tecnológicas inovadoras."
-        className="mt-24 sm:mt-32 lg:mt-40 text-[#FFFFFF]"
-      >
-        <p className="text-[#666666]">
-          Oferecemos ferramentas e tecnologias para transformar ideias em ações
-          concretas, promovendo impacto positivo na sociedade.
-        </p>
-      </SectionIntro>
-      <Container className="mt-16">
-        <div className="lg:flex lg:items-center lg:justify-end">
-          <div className="flex justify-center lg:w-1/2 lg:justify-end lg:pr-12">
-            <FadeIn className="w-[33.75rem] flex-none lg:w-[45rem]">
-              <StylizedImage
-                src={imageLaptop}
-                sizes="(min-width: 1024px) 41rem, 31rem"
-                className="justify-center lg:justify-end"
-              />
-            </FadeIn>
-          </div>
-          <List className="mt-16 lg:mt-0 lg:w-1/2 lg:min-w-[33rem] lg:pl-4">
-            <ListItem title="Desenvolvimento Web">
-              Criamos páginas web responsivas e acessíveis para promover a
-              conscientização e facilitar a conexão entre doadores e receptores.
-            </ListItem>
-            <ListItem title="Desenvolvimento de Aplicações">
-              Nossa equipe desenvolve soluções personalizadas, utilizando as
-              tecnologias mais recentes para atender às necessidades de impacto
-              social.
-            </ListItem>
-            <ListItem title="E-commerce">
-              Estamos na vanguarda do desenvolvimento de plataformas de
-              arrecadação online, oferecendo suporte para campanhas de doação e
-              projetos sociais.
-            </ListItem>
-            <ListItem title="Gestão de Conteúdo Personalizada">
-              Entendemos a importância de uma gestão de conteúdo robusta. Por
-              isso, integramos sistemas eficientes para potencializar projetos
-              sociais.
-            </ListItem>
-          </List>
-        </div>
-      </Container>
-    </>
-  )
-}
+
 
 export const metadata: Metadata = {
   description:
@@ -204,8 +155,6 @@ export default async function Home() {
         O Projeto Vida mudou minha percepção sobre a importância da doação de órgãos.
         A equipe foi além, criando campanhas que realmente tocam as pessoas e promovem esperança.
       </Testimonial>
-
-      <Services />
 
       <ContactSection />
     </>

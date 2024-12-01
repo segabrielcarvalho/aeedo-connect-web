@@ -73,7 +73,7 @@ function Build() {
     <Section title="Requisitos e Procedimentos" image={{ src: imageLaptop, shape: 1 }}>
       <div className="space-y-6 text-base text-neutral-600">
         <p>
-          Para ser um doador, é fundamental comunicar à família o desejo de doar órgãos. No Brasil, a autorização familiar é indispensável para a doação após o falecimento. 
+          Para ser um doador, é fundamental comunicar à família o desejo de doar órgãos. No Brasil, a autorização familiar é indispensável para a doação após o falecimento.
         </p>
         <p>
           A doação pode ser feita em vida ou após a morte encefálica confirmada. Doadores vivos podem oferecer um rim, parte do fígado ou da medula óssea sem comprometer sua saúde. Para doadores falecidos, a doação abrange órgãos como coração, pulmões, fígado, rins e pâncreas.

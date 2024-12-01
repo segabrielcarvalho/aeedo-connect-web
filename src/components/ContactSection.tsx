@@ -13,7 +13,7 @@ export function ContactSection() {
               Entre em contato e ajude a transformar vidas
             </h2>
             <div className="mt-6 flex">
-              <Button href="/blog" invert>
+              <Button href="/contact" invert>
                 Fale conosco
               </Button>
             </div>

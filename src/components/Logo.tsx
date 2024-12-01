@@ -49,6 +49,7 @@ export function Logo({
 }: React.ComponentPropsWithoutRef<'svg'> & {
   invert?: boolean;
   filled?: boolean;
+  fillOnHover?: boolean;
 }) {
   return (
     <svg viewBox="0 0 200 32" aria-hidden="true" {...props}>

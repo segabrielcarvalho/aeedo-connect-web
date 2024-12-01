@@ -11,7 +11,6 @@ const navigation = [
     links: [
       { title: 'Maria Silva', href: '/work/family-fund' },
       { title: 'Projeto Vida', href: '/work/unseal' },
-      { title: 'Conscientização', href: '/work/phobia' },
       {
         title: (
           <>
@@ -26,9 +25,7 @@ const navigation = [
     title: 'Sobre Nós',
     links: [
       { title: 'Quem Somos', href: '/about' },
-      { title: 'Nossa Missão', href: '/process' },
-      { title: 'Blog', href: '/blog' },
-      { title: 'Contato', href: '/contact' },
+      { title: 'Fale conosco', href: '/contact' },
     ],
   },
   {
