@@ -93,13 +93,13 @@ function NewsletterForm() {
           placeholder="Endereço de email"
           autoComplete="email"
           aria-label="Endereço de email"
-          className="block w-full rounded-2xl border border-[#63F5E4] bg-transparent py-4 pl-6 pr-20 text-base/6 text-[#333333] ring-4 ring-transparent transition placeholder:text-[#666666] focus:border-[#2EC4B6] focus:outline-none focus:ring-[#63F5E4]/50"
+          className="block w-full rounded-2xl border border-[#E50808] bg-transparent py-4 pl-6 pr-20 text-base/6 text-[#333333] ring-4 ring-transparent transition placeholder:text-[#666666] focus:border-[#071108] focus:outline-none focus:ring-[#E50808]/50"
         />
         <div className="absolute inset-y-1 right-1 flex justify-end">
           <button
             type="submit"
             aria-label="Enviar"
-            className="flex aspect-square h-full items-center justify-center rounded-xl bg-[#63F5E4] text-white transition hover:bg-[#2EC4B6]"
+            className="flex aspect-square h-full items-center justify-center rounded-xl bg-[#E50808] text-white transition hover:bg-[#071108]"
           >
             <ArrowIcon className="w-4" />
           </button>
@@ -119,7 +119,7 @@ export function Footer() {
             <NewsletterForm />
           </div>
         </div>
-        <div className="mb-20 mt-24 flex flex-wrap items-end justify-between gap-x-6 gap-y-4 border-t border-[#63F5E4] pt-12">
+        <div className="mb-20 mt-24 flex flex-wrap items-end justify-between gap-x-6 gap-y-4 border-t border-[#E50808] pt-12">
           <Link href="/" aria-label="Página inicial">
             <Logo className="h-8" fillOnHover />
           </Link>

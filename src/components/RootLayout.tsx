@@ -92,7 +92,7 @@ function Header({
             aria-controls={panelId}
             className={clsx(
               'group -m-2.5 rounded-full p-2.5 transition',
-              invert ? 'hover:bg-[#2EC4B6]' : 'hover:bg-[#63F5E4]',
+              invert ? 'hover:bg-[#071108]' : 'hover:bg-[#E50808]',
             )}
             aria-label="Toggle navigation"
           >
@@ -101,7 +101,7 @@ function Header({
                 'h-6 w-6',
                 invert
                   ? 'fill-[#FFFFFF] group-hover:fill-[#4CAF50]'
-                  : 'fill-[#333333] group-hover:fill-[#2EC4B6]',
+                  : 'fill-[#333333] group-hover:fill-[#071108]',
               )}
             />
           </button>
@@ -113,7 +113,7 @@ function Header({
 
 function NavigationRow({ children }: { children: React.ReactNode }) {
   return (
-    <div className="even:mt-px sm:bg-[#E0F4FF]">
+    <div className="even:mt-px sm:bg-[#FFC2C2]">
       <Container>
         <div className="grid grid-cols-1 sm:grid-cols-2">{children}</div>
       </Container>
@@ -131,10 +131,10 @@ function NavigationItem({
   return (
     <Link
       href={href}
-      className="group relative isolate -mx-6 bg-[#E0F4FF] px-6 py-10 even:mt-px sm:mx-0 sm:px-0 sm:py-16 sm:odd:pr-16 sm:even:border-l sm:even:border-[#63F5E4] sm:even:pl-16"
+      className="group relative isolate -mx-6 bg-[#FFC2C2] px-6 py-10 even:mt-px sm:mx-0 sm:px-0 sm:py-16 sm:odd:pr-16 sm:even:border-l sm:even:border-[#E50808] sm:even:pl-16"
     >
       {children}
-      <span className="absolute inset-y-0 -z-10 w-screen bg-[#63F5E4] opacity-0 transition group-odd:right-0 group-even:left-0 group-hover:opacity-100" />
+      <span className="absolute inset-y-0 -z-10 w-screen bg-[#E50808] opacity-0 transition group-odd:right-0 group-even:left-0 group-hover:opacity-100" />
     </Link>
   )
 }
@@ -204,7 +204,7 @@ function RootLayoutInner({ children }: { children: React.ReactNode }) {
           layout
           id={panelId}
           style={{ height: expanded ? 'auto' : '0.5rem' }}
-          className="relative z-50 overflow-hidden bg-[#63F5E4] pt-2"
+          className="relative z-50 overflow-hidden bg-[#E50808] pt-2"
           aria-hidden={expanded ? undefined : 'true'}
         >
           <motion.div layout className="bg-neutral-800">

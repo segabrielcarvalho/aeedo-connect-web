@@ -29,11 +29,11 @@ export default {
         ],
       },
       colors: {
-        primary: '#63F5E4', // Cor Primária
-        secondary: '#2EC4B6', // Cor Secundária
+        primary: '#E50808', // Cor Primária
+        secondary: '#071108', // Cor Secundária
         backgroundMain: '#FFFFFF', // Cor de Fundo Principal
-        backgroundAlt: '#E0F4FF', // Cor de Fundo Alternativo
-        textPrimary: '#333333', // Texto Principal
+        backgroundAlt: '#FFC2C2', // Cor de Fundo Alternativo
+        textPrimary: '#FFFFFF', // Texto Principal
         textSecondary: '#666666', // Texto Secundário
         buttonHighlight: '#1D9BF0', // Destaques e Botões Futuros
         error: '#FF6B6B', // Estados de Erro

@@ -28,7 +28,7 @@ export default async function CaseStudyLayout({
           </PageIntro>
 
           <FadeIn>
-            <div className="mt-24 bg-[#E0F4FF] sm:mt-32 lg:mt-40">
+            <div className="mt-24 bg-[#FFC2C2] sm:mt-32 lg:mt-40">
               <Container>
                 <div className="mx-auto max-w-5xl">
                   <dl className="grid grid-cols-1 gap-6 sm:grid-cols-3 text-sm text-[#333333] text-center">
