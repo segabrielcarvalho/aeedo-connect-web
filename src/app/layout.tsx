@@ -7,7 +7,7 @@ import '@/styles/tailwind.css'
 export const metadata: Metadata = {
   title: {
     template: '%s - Studio',
-    default: 'Studio - Award winning developer studio based in Denmark',
+    default: 'AEDO Connect - Conectando Vidas, Facilitando a Doação de Órgãos',
   },
 }
 

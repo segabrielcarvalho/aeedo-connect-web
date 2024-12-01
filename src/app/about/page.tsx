@@ -28,27 +28,24 @@ function Culture() {
   return (
     <div className="mt-24 rounded-4xl bg-neutral-950 py-24 sm:mt-32 lg:mt-40 lg:py-32">
       <SectionIntro
-        eyebrow="Our culture"
-        title="Balance your passion with your passion for life."
+        eyebrow="Nossa Cultura"
+        title="Transformando sonhos em realidade com paixão e dedicação."
         invert
       >
         <p>
-          We are a group of like-minded people who share the same core values.
+          Trabalhamos com inovação e empatia para oferecer uma solução que salva vidas e conecta pessoas.
         </p>
       </SectionIntro>
       <Container className="mt-16">
         <GridList>
-          <GridListItem title="Loyalty" invert>
-            Our team has been with us since the beginning because none of them
-            are allowed to have LinkedIn profiles.
+          <GridListItem title="Lealdade" invert>
+            Valorizamos o compromisso mútuo em nossa equipe e com as pessoas que atendemos.
           </GridListItem>
-          <GridListItem title="Trust" invert>
-            We don’t care when our team works just as long as they are working
-            every waking second.
+          <GridListItem title="Confiança" invert>
+            Garantimos um ambiente colaborativo e transparente para todos.
           </GridListItem>
-          <GridListItem title="Compassion" invert>
-            You never know what someone is going through at home and we make
-            sure to never find out.
+          <GridListItem title="Compaixão" invert>
+            Sabemos que salvar vidas é um ato de empatia e respeito.
           </GridListItem>
         </GridList>
       </Container>
@@ -58,72 +55,60 @@ function Culture() {
 
 const team = [
   {
-    title: 'Leadership',
+    title: 'Liderança',
     people: [
       {
-        name: 'Leslie Alexander',
-        role: 'Co-Founder / CEO',
-        image: { src: imageLeslieAlexander },
+        name: 'Gabriel Fernandes Carvalho',
+        role: 'Engenheiro de Dados / Líder de Operações',
+        image: { src: imageKathrynMurphy },
+        
       },
       {
-        name: 'Michael Foster',
-        role: 'Co-Founder / CTO',
-        image: { src: imageMichaelFoster },
+        name: 'Guilherme Rezende Damaceno',
+        role: 'Arquiteto de Software / Líder Técnico',
+        image: { src: imageEmmaDorsey },
       },
       {
-        name: 'Dries Vincent',
-        role: 'Partner & Business Relations',
-        image: { src: imageDriesVincent },
+        name: 'Ruan de Freitas Moreira',
+        role: 'Analista de Requisitos / Líder de Qualidade',
+        image: { src: imageJeffreyWebb },
+        
       },
     ],
   },
   {
-    title: 'Team',
+    title: 'Equipe',
     people: [
       {
-        name: 'Chelsea Hagon',
-        role: 'Senior Developer',
-        image: { src: imageChelseaHagon },
+        name: 'Calebe Rodrigues Rolim',
+        role: 'Coordenador de Operações',
+        image: { src: imageAngelaFisher },
       },
       {
-        name: 'Emma Dorsey',
-        role: 'Senior Designer',
-        image: { src: imageEmmaDorsey },
-      },
-      {
-        name: 'Leonard Krasner',
-        role: 'VP, User Experience',
-        image: { src: imageLeonardKrasner },
-      },
-      {
-        name: 'Blake Reid',
-        role: 'Junior Copywriter',
-        image: { src: imageBlakeReid },
-      },
-      {
-        name: 'Kathryn Murphy',
-        role: 'VP, Human Resources',
-        image: { src: imageKathrynMurphy },
-      },
-      {
-        name: 'Whitney Francis',
-        role: 'Content Specialist',
-        image: { src: imageWhitneyFrancis },
-      },
-      {
-        name: 'Jeffrey Webb',
-        role: 'Account Coordinator',
-        image: { src: imageJeffreyWebb },
-      },
-      {
-        name: 'Benjamin Russel',
-        role: 'Senior Developer',
+        name: 'Filipe Mota Tocchio Rodrigues',
+        role: 'Product Owner',
         image: { src: imageBenjaminRussel },
       },
       {
-        name: 'Angela Fisher',
-        role: 'Front-end Developer',
-        image: { src: imageAngelaFisher },
+        name: 'Filipe Gideão Rodrigues',
+        role: 'Desenvolvedor Front-End',
+        image: { src: imageBlakeReid },
+        
+      },
+      {
+        name: 'Gabriel Reis Costa',
+        role: 'Designer UX/UI',
+        image: { src: imageChelseaHagon },
+      },
+      {
+        name: 'José Vitor Pereira Silva',
+        role: 'Analista de Qualidade',
+        image: { src: imageLeonardKrasner },
+      },
+      {
+        name: 'Gustavo Silva Batista Rosa',
+        role: 'Desenvolvedor Back-End',
+        image: { src: imageMichaelFoster },
       },
     ],
   },
@@ -179,9 +164,9 @@ function Team() {
 }
 
 export const metadata: Metadata = {
-  title: 'About Us',
+  title: 'Sobre Nós',
   description:
-    'We believe that our strength lies in our collaborative approach, which puts our clients at the center of everything we do.',
+    'Acreditamos que nossa força está na inovação colaborativa e na missão de salvar vidas.',
 }
 
 export default async function About() {
@@ -189,31 +174,24 @@ export default async function About() {
 
   return (
     <>
-      <PageIntro eyebrow="About us" title="Our strength is collaboration">
+      <PageIntro eyebrow="Sobre Nós" title="Nossa força está na colaboração e propósito.">
         <p>
-          We believe that our strength lies in our collaborative approach, which
-          puts our clients at the center of everything we do.
+          Somos uma iniciativa universitária comprometida em usar tecnologia para salvar vidas e conectar pessoas.
         </p>
         <div className="mt-10 max-w-2xl space-y-6 text-base">
           <p>
-            Studio was started by three friends who noticed that developer
-            studios were charging clients double what an in-house team would
-            cost. Since the beginning, we have been committed to doing things
-            differently by charging triple instead.
+            Desde o início, acreditamos que a tecnologia pode ser um instrumento de mudança. Nosso sistema torna o processo de doação mais acessível e eficiente, oferecendo uma nova chance para quem precisa.
           </p>
           <p>
-            At Studio, we’re more than just colleagues — we’re a family. This
-            means we pay very little and expect people to work late. We want our
-            employees to bring their whole selves to work. In return, we just
-            ask that they keep themselves there until at least 6:30pm.
+            Trabalhamos juntos como um time dedicado, motivados pelo desejo de causar impacto real na sociedade e salvar vidas.
           </p>
         </div>
       </PageIntro>
       <Container className="mt-16">
         <StatList>
-          <StatListItem value="35" label="Underpaid employees" />
-          <StatListItem value="52" label="Placated clients" />
-          <StatListItem value="$25M" label="Invoices billed" />
+          <StatListItem value="35" label="Usuários conectados" />
+          <StatListItem value="52" label="Vidas impactadas" />
+          <StatListItem value="$25M" label="Investimento em tecnologia social" />
         </StatList>
       </Container>
 
@@ -223,8 +201,8 @@ export default async function About() {
 
       <PageLinks
         className="mt-24 sm:mt-32 lg:mt-40"
-        title="From the blog"
-        intro="Our team of experienced designers and developers has just one thing on their mind; working on your ideas to draw a smile on the face of your users worldwide. From conducting Brand Sprints to UX Design."
+        title="Do nosso blog"
+        intro="Descubra como estamos transformando vidas e conectando pessoas por meio de tecnologia inovadora."
         pages={blogArticles}
       />
 
