@@ -55,131 +55,58 @@ function Section({
 
 function Discover() {
   return (
-    <Section title="Discover" image={{ src: imageWhiteboard }}>
+    <Section title="Importância da Doação de Órgãos" image={{ src: imageWhiteboard }}>
       <div className="space-y-6 text-base text-neutral-600">
         <p>
-          We work closely with our clients to understand their{' '}
-          <strong className="font-semibold text-neutral-950">needs</strong> and
-          goals, embedding ourselves in their every day operations to understand
-          what makes their business tick.
+          A doação de órgãos é um gesto de solidariedade que salva vidas. Uma única pessoa pode transformar a vida de até oito pacientes, além de melhorar a qualidade de vida de dezenas de outras com a doação de tecidos, como córneas e pele.
         </p>
         <p>
-          Our team of private investigators shadow the company director’s for
-          several weeks while our account managers focus on going through their
-          trash. Our senior security experts then perform social engineering
-          hacks to gain access to their{' '}
-          <strong className="font-semibold text-neutral-950">business</strong>{' '}
-          accounts — handing that information over to our forensic accounting
-          team.
-        </p>
-        <p>
-          Once the full audit is complete, we report back with a comprehensive{' '}
-          <strong className="font-semibold text-neutral-950">plan</strong> and,
-          more importantly, a budget.
+          No Brasil, milhares de pessoas aguardam na fila por um transplante, sendo essa a única chance de cura para muitas delas. Promover a conscientização é essencial para reduzir essa espera e oferecer uma nova chance para quem mais precisa.
         </p>
       </div>
-
-      <h3 className="mt-12 font-display text-base font-semibold text-neutral-950">
-        Included in this phase
-      </h3>
-      <TagList className="mt-4">
-        <TagListItem>In-depth questionnaires</TagListItem>
-        <TagListItem>Feasibility studies</TagListItem>
-        <TagListItem>Blood samples</TagListItem>
-        <TagListItem>Employee surveys</TagListItem>
-        <TagListItem>Proofs-of-concept</TagListItem>
-        <TagListItem>Forensic audit</TagListItem>
-      </TagList>
     </Section>
   )
 }
 
 function Build() {
   return (
-    <Section title="Build" image={{ src: imageLaptop, shape: 1 }}>
+    <Section title="Requisitos e Procedimentos" image={{ src: imageLaptop, shape: 1 }}>
       <div className="space-y-6 text-base text-neutral-600">
         <p>
-          Based off of the discovery phase, we develop a comprehensive roadmap
-          for each product and start working towards delivery. The roadmap is an
-          intricately tangled mess of technical nonsense designed to drag the
-          project out as long as possible.
+          Para ser um doador, é fundamental comunicar à família o desejo de doar órgãos. No Brasil, a autorização familiar é indispensável para a doação após o falecimento. 
         </p>
         <p>
-          Each client is assigned a key account manager to keep lines of
-          communication open and obscure the actual progress of the project.
-          They act as a buffer between the client’s incessant nagging and the
-          development team who are hard at work scouring open source projects
-          for code to re-purpose.
+          A doação pode ser feita em vida ou após a morte encefálica confirmada. Doadores vivos podem oferecer um rim, parte do fígado ou da medula óssea sem comprometer sua saúde. Para doadores falecidos, a doação abrange órgãos como coração, pulmões, fígado, rins e pâncreas.
         </p>
-        <p>
-          Our account managers are trained to only reply to client emails after
-          9pm, several days after the initial email. This reinforces the general
-          aura that we are very busy and dissuades clients from asking for
-          changes.
-        </p>
+        <TagList className="mt-4">
+          <TagListItem>Consentimento familiar</TagListItem>
+          <TagListItem>Confirmação de morte encefálica</TagListItem>
+          <TagListItem>Exames médicos</TagListItem>
+        </TagList>
       </div>
-
-      <Blockquote
-        author={{ name: 'Debra Fiscal', role: 'CEO of Unseal' }}
-        className="mt-12"
-      >
-        Studio were so regular with their progress updates we almost began to
-        think they were automated!
-      </Blockquote>
     </Section>
   )
 }
 
 function Deliver() {
   return (
-    <Section title="Deliver" image={{ src: imageMeeting, shape: 2 }}>
+    <Section title="Benefícios e Riscos" image={{ src: imageMeeting, shape: 2 }}>
       <div className="space-y-6 text-base text-neutral-600">
         <p>
-          About halfway through the Build phase, we push each project out by 6
-          weeks due to a change in{' '}
-          <strong className="font-semibold text-neutral-950">
-            requirements
-          </strong>
-          . This allows us to increase the budget a final time before launch.
+          A doação de órgãos oferece a possibilidade de salvar vidas e melhorar a qualidade de vida de pessoas gravemente doentes. Para o receptor, os benefícios incluem a restauração da saúde e a retomada de atividades diárias.
         </p>
         <p>
-          Despite largely using pre-built components, most of the{' '}
-          <strong className="font-semibold text-neutral-950">progress</strong>{' '}
-          on each project takes place in the final 24 hours. The development
-          time allocated to each client is actually spent making augmented
-          reality demos that go viral on social media.
+          Os riscos associados à doação estão relacionados principalmente ao receptor, como rejeição do órgão ou complicações cirúrgicas. Contudo, os avanços médicos têm reduzido significativamente esses riscos, aumentando as taxas de sucesso dos transplantes.
         </p>
-        <p>
-          We ensure that the main pages of the site are{' '}
-          <strong className="font-semibold text-neutral-950">
-            fully functional
-          </strong>{' '}
-          at launch — the auxiliary pages will, of course, be lorem ipusm shells
-          which get updated as part of our exorbitant{' '}
-          <strong className="font-semibold text-neutral-950">
-            maintenance
-          </strong>{' '}
-          retainer.
-        </p>
+        <List className="mt-8">
+          <ListItem title="Benefícios">
+            Salvar vidas, melhorar a qualidade de vida e proporcionar esperança para famílias.
+          </ListItem>
+          <ListItem title="Riscos">
+            Possibilidade de rejeição do órgão e complicações cirúrgicas, monitoradas por equipes médicas especializadas.
+          </ListItem>
+        </List>
       </div>
-
-      <h3 className="mt-12 font-display text-base font-semibold text-neutral-950">
-        Included in this phase
-      </h3>
-      <List className="mt-8">
-        <ListItem title="Testing">
-          Our projects always have 100% test coverage, which would be impressive
-          if our tests weren’t as porous as a sieve.
-        </ListItem>
-        <ListItem title="Infrastructure">
-          To ensure reliability we only use the best Digital Ocean droplets that
-          $4 a month can buy.
-        </ListItem>
-        <ListItem title="Support">
-          Because we hold the API keys for every critical service your business
-          uses, you can expect a lifetime of support, and invoices, from us.
-        </ListItem>
-      </List>
     </Section>
   )
 }
@@ -187,72 +114,29 @@ function Deliver() {
 function Values() {
   return (
     <div className="relative mt-24 pt-24 sm:mt-32 sm:pt-32 lg:mt-40 lg:pt-40">
-      <div className="absolute inset-x-0 top-0 -z-10 h-[884px] overflow-hidden rounded-t-4xl bg-gradient-to-b from-neutral-50">
-        <GridPattern
-          className="absolute inset-0 h-full w-full fill-neutral-100 stroke-neutral-950/5 [mask-image:linear-gradient(to_bottom_left,white_40%,transparent_50%)]"
-          yOffset={-270}
-        />
-      </div>
-
       <SectionIntro
-        eyebrow="Our values"
-        title="Balancing reliability and innovation"
+        eyebrow="Leis e Direitos"
+        title="Legislação sobre Doação de Órgãos no Brasil"
       >
         <p>
-          We strive to stay at the forefront of emerging trends and
-          technologies, while completely ignoring them and forking that old
-          Rails project we feel comfortable using. We stand by our core values
-          to justify that decision.
+          A doação de órgãos no Brasil é regulamentada pela Lei nº 9.434/1997, que garante a segurança e ética no processo. Recentemente, a Lei nº 14.722/2023 reforçou a importância da conscientização e incentivo à doação.
         </p>
       </SectionIntro>
-
-      <Container className="mt-24">
-        <GridList>
-          <GridListItem title="Meticulous">
-            The first part of any partnership is getting our designer to put
-            your logo in our template. The second step is getting them to do the
-            colors.
-          </GridListItem>
-          <GridListItem title="Efficient">
-            We pride ourselves on never missing a deadline which is easy because
-            most of the work was done years ago.
-          </GridListItem>
-          <GridListItem title="Adaptable">
-            Every business has unique needs and our greatest challenge is
-            shoe-horning those needs into something we already built.
-          </GridListItem>
-          <GridListItem title="Honest">
-            We are transparent about all of our processes, banking on the simple
-            fact our clients never actually read anything.
-          </GridListItem>
-          <GridListItem title="Loyal">
-            We foster long-term relationships with our clients that go beyond
-            just delivering a product, allowing us to invoice them for decades.
-          </GridListItem>
-          <GridListItem title="Innovative">
-            The technological landscape is always evolving and so are we. We are
-            constantly on the lookout for new open source projects to clone.
-          </GridListItem>
-        </GridList>
-      </Container>
     </div>
   )
 }
 
 export const metadata: Metadata = {
-  title: 'Our Process',
-  description:
-    'We believe in efficiency and maximizing our resources to provide the best value to our clients.',
+  title: 'Doação de Órgãos',
+  description: 'Informações completas sobre a importância, requisitos e benefícios da doação de órgãos no Brasil.',
 }
 
 export default function Process() {
   return (
     <>
-      <PageIntro eyebrow="Our process" title="How we work">
+      <PageIntro eyebrow="Doação de Órgãos" title="Conscientize e Salve Vidas">
         <p>
-          We believe in efficiency and maximizing our resources to provide the
-          best value to our clients. The primary way we do that is by re-using
-          the same five projects we’ve been developing for the past decade.
+          A doação de órgãos é um ato de amor que transcende a vida. Entenda os benefícios, requisitos e leis que tornam esse gesto essencial para salvar vidas.
         </p>
       </PageIntro>
 

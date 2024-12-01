@@ -199,12 +199,7 @@ export default async function About() {
 
       <Team />
 
-      <PageLinks
-        className="mt-24 sm:mt-32 lg:mt-40"
-        title="Do nosso blog"
-        intro="Descubra como estamos transformando vidas e conectando pessoas por meio de tecnologia inovadora."
-        pages={blogArticles}
-      />
+      
 
       <ContactSection />
     </>
