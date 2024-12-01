@@ -28,6 +28,17 @@ export default {
           { fontVariationSettings: '"wdth" 125' },
         ],
       },
+      colors: {
+        primary: '#63F5E4', // Cor Primária
+        secondary: '#2EC4B6', // Cor Secundária
+        backgroundMain: '#FFFFFF', // Cor de Fundo Principal
+        backgroundAlt: '#E0F4FF', // Cor de Fundo Alternativo
+        textPrimary: '#333333', // Texto Principal
+        textSecondary: '#666666', // Texto Secundário
+        buttonHighlight: '#1D9BF0', // Destaques e Botões Futuros
+        error: '#FF6B6B', // Estados de Erro
+        success: '#4CAF50', // Estados de Sucesso
+      },
     },
   },
   plugins: [],

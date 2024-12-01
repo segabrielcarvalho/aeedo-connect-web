@@ -13,10 +13,10 @@ function Office({
     <address
       className={clsx(
         'text-sm not-italic',
-        invert ? 'text-neutral-300' : 'text-neutral-600',
+        invert ? 'text-[#E0F4FF]' : 'text-[#666666]', // Ajuste para cores de texto secundário
       )}
     >
-      <strong className={invert ? 'text-white' : 'text-neutral-950'}>
+      <strong className={invert ? 'text-white' : 'text-[#333333]'}> {/* Ajuste para texto principal */}
         {name}
       </strong>
       <br />

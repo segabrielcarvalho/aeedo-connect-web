@@ -1,21 +1,21 @@
-import Link from 'next/link'
+import Link from 'next/link';
 
-import { Container } from '@/components/Container'
-import { FadeIn } from '@/components/FadeIn'
-import { Logo } from '@/components/Logo'
-import { socialMediaProfiles } from '@/components/SocialMedia'
+import { Container } from '@/components/Container';
+import { FadeIn } from '@/components/FadeIn';
+import { Logo } from '@/components/Logo';
+import { socialMediaProfiles } from '@/components/SocialMedia';
 
 const navigation = [
   {
-    title: 'Work',
+    title: 'Histórias de Sucesso',
     links: [
-      { title: 'FamilyFund', href: '/work/family-fund' },
-      { title: 'Unseal', href: '/work/unseal' },
-      { title: 'Phobia', href: '/work/phobia' },
+      { title: 'Maria Silva', href: '/work/family-fund' },
+      { title: 'Projeto Vida', href: '/work/unseal' },
+      { title: 'Conscientização', href: '/work/phobia' },
       {
         title: (
           <>
-            See all <span aria-hidden="true">&rarr;</span>
+            Ver todas <span aria-hidden="true">&rarr;</span>
           </>
         ),
         href: '/work',
@@ -23,19 +23,19 @@ const navigation = [
     ],
   },
   {
-    title: 'Company',
+    title: 'Sobre Nós',
     links: [
-      { title: 'About', href: '/about' },
-      { title: 'Process', href: '/process' },
+      { title: 'Quem Somos', href: '/about' },
+      { title: 'Nossa Missão', href: '/process' },
       { title: 'Blog', href: '/blog' },
-      { title: 'Contact us', href: '/contact' },
+      { title: 'Contato', href: '/contact' },
     ],
   },
   {
-    title: 'Connect',
+    title: 'Conecte-se Conosco',
     links: socialMediaProfiles,
   },
-]
+];
 
 function Navigation() {
   return (
@@ -62,7 +62,7 @@ function Navigation() {
         ))}
       </ul>
     </nav>
-  )
+  );
 }
 
 function ArrowIcon(props: React.ComponentPropsWithoutRef<'svg'>) {
@@ -75,39 +75,38 @@ function ArrowIcon(props: React.ComponentPropsWithoutRef<'svg'>) {
         d="M16 3 10 .5v2H0v1h10v2L16 3Z"
       />
     </svg>
-  )
+  );
 }
 
 function NewsletterForm() {
   return (
     <form className="max-w-sm">
-      <h2 className="font-display text-sm font-semibold tracking-wider text-neutral-950">
-        Sign up for our newsletter
+      <h2 className="ont-display text-sm font-semibold tracking-wider text-[#333333]">
+        Inscreva-se na nossa newsletter
       </h2>
-      <p className="mt-4 text-sm text-neutral-700">
-        Subscribe to get the latest design news, articles, resources and
-        inspiration.
+      <p className="mt-4 text-sm text-[#666666]">
+        Receba as últimas notícias, artigos e inspirações sobre doações de órgãos.
       </p>
       <div className="relative mt-6">
         <input
           type="email"
-          placeholder="Email address"
+          placeholder="Endereço de email"
           autoComplete="email"
-          aria-label="Email address"
-          className="block w-full rounded-2xl border border-neutral-300 bg-transparent py-4 pl-6 pr-20 text-base/6 text-neutral-950 ring-4 ring-transparent transition placeholder:text-neutral-500 focus:border-neutral-950 focus:outline-none focus:ring-neutral-950/5"
+          aria-label="Endereço de email"
+          className="block w-full rounded-2xl border border-[#63F5E4] bg-transparent py-4 pl-6 pr-20 text-base/6 text-[#333333] ring-4 ring-transparent transition placeholder:text-[#666666] focus:border-[#2EC4B6] focus:outline-none focus:ring-[#63F5E4]/50"
         />
         <div className="absolute inset-y-1 right-1 flex justify-end">
           <button
             type="submit"
-            aria-label="Submit"
-            className="flex aspect-square h-full items-center justify-center rounded-xl bg-neutral-950 text-white transition hover:bg-neutral-800"
+            aria-label="Enviar"
+            className="flex aspect-square h-full items-center justify-center rounded-xl bg-[#63F5E4] text-white transition hover:bg-[#2EC4B6]"
           >
             <ArrowIcon className="w-4" />
           </button>
         </div>
       </div>
     </form>
-  )
+  );
 }
 
 export function Footer() {
@@ -120,15 +119,15 @@ export function Footer() {
             <NewsletterForm />
           </div>
         </div>
-        <div className="mb-20 mt-24 flex flex-wrap items-end justify-between gap-x-6 gap-y-4 border-t border-neutral-950/10 pt-12">
-          <Link href="/" aria-label="Home">
+        <div className="mb-20 mt-24 flex flex-wrap items-end justify-between gap-x-6 gap-y-4 border-t border-[#63F5E4] pt-12">
+          <Link href="/" aria-label="Página inicial">
             <Logo className="h-8" fillOnHover />
           </Link>
           <p className="text-sm text-neutral-700">
-            © Studio Agency Inc. {new Date().getFullYear()}
+            © AEDO Connect {new Date().getFullYear()}
           </p>
         </div>
       </FadeIn>
     </Container>
-  )
+  );
 }
