@@ -72,7 +72,7 @@ export default async function Blog() {
                         aria-label={`Read more: ${article.title}`}
                         className="mt-8"
                       >
-                        Read more
+                        Leia mais
                       </Button>
                     </div>
                   </div>

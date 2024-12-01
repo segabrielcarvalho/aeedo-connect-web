@@ -30,7 +30,7 @@ function CaseStudies({
     <Container className="mt-40">
       <FadeIn>
         <h2 className="font-display text-2xl font-semibold text-neutral-950">
-          Case studies
+          Casos de Sucesso
         </h2>
       </FadeIn>
       <div className="mt-10 space-y-20 sm:space-y-24 lg:space-y-32">
@@ -42,7 +42,7 @@ function CaseStudies({
                   <div className="sm:flex sm:items-center sm:gap-x-6 lg:block">
                     <Image
                       src={caseStudy.logo}
-                      alt=""
+                      alt={`Logo do cliente ${caseStudy.client}`}
                       className="h-16 w-16 flex-none"
                       unoptimized
                     />
@@ -73,9 +73,9 @@ function CaseStudies({
                   <div className="mt-8 flex">
                     <Button
                       href={caseStudy.href}
-                      aria-label={`Read case study: ${caseStudy.client}`}
+                      aria-label={`Leia o estudo de caso do cliente ${caseStudy.client}`}
                     >
-                      Read case study
+                      Veja o Estudo de Caso
                     </Button>
                   </div>
                   {caseStudy.testimonial && (
@@ -112,7 +112,7 @@ function Clients() {
     <Container className="mt-24 sm:mt-32 lg:mt-40">
       <FadeIn>
         <h2 className="font-display text-2xl font-semibold text-neutral-950">
-          You’re in good company
+          Organizações Parceiras
         </h2>
       </FadeIn>
       <FadeInStagger className="mt-10" faster>
@@ -125,7 +125,7 @@ function Clients() {
             <li key={client} className="group">
               <FadeIn className="overflow-hidden">
                 <Border className="pt-12 group-[&:nth-child(-n+2)]:-mt-px sm:group-[&:nth-child(3)]:-mt-px lg:group-[&:nth-child(4)]:-mt-px">
-                  <Image src={logo} alt={client} unoptimized />
+                  <Image src={logo} alt={`Logo da organização ${client}`} unoptimized />
                 </Border>
               </FadeIn>
             </li>
@@ -137,9 +137,9 @@ function Clients() {
 }
 
 export const metadata: Metadata = {
-  title: 'Our Work',
+  title: 'Nosso Trabalho',
   description:
-    'We believe in efficiency and maximizing our resources to provide the best value to our clients.',
+    'Somos o AEDO Connect, um sistema inovador para conectar doadores de órgãos e salvar vidas.',
 }
 
 export default async function Work() {
@@ -148,13 +148,12 @@ export default async function Work() {
   return (
     <>
       <PageIntro
-        eyebrow="Our work"
-        title="Proven solutions for real-world problems."
+        eyebrow="AEDO Connect"
+        title="Soluções que salvam vidas."
       >
         <p>
-          We believe in efficiency and maximizing our resources to provide the
-          best value to our clients. The primary way we do that is by re-using
-          the same five projects we’ve been developing for the past decade.
+          Somos o AEDO Connect, um sistema eletrônico projetado para conectar e captar 
+          doadores de órgãos, ajudando a transformar vidas e construir um futuro mais saudável.
         </p>
       </PageIntro>
 
@@ -164,8 +163,8 @@ export default async function Work() {
         className="mt-24 sm:mt-32 lg:mt-40"
         client={{ name: 'Mail Smirk', logo: logoMailSmirk }}
       >
-        We approached <em>Studio</em> because we loved their past work. They
-        delivered something remarkably similar in record time.
+        Buscamos o <em>AEDO Connect</em> por sua inovação. Eles nos entregaram 
+        um sistema confiável que fez toda a diferença.
       </Testimonial>
 
       <Clients />
