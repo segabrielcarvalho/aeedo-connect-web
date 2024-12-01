@@ -13,10 +13,10 @@ function Office({
     <address
       className={clsx(
         'text-sm not-italic',
-        invert ? 'text-[#FFC2C2]' : 'text-[#666666]', // Ajuste para cores de texto secundário
+        invert ? 'text-textPrimary' : 'text-textPrimary', // Ajuste para cores de texto secundário
       )}
     >
-      <strong className={invert ? 'text-white' : 'text-[#333333]'}> {/* Ajuste para texto principal */}
+      <strong className={invert ? 'text-textPrimary' : 'text-textPrimary'}> {/* Ajuste para texto principal */}
         {name}
       </strong>
       <br />
@@ -32,17 +32,12 @@ export function Offices({
   return (
     <ul role="list" {...props}>
       <li>
-        <Office name="Copenhagen" invert={invert}>
-          1 Carlsberg Gate
+        <Office name="Brasil" invert={invert}>
+          Anápolis - GO
           <br />
-          1260, København, Denmark
-        </Office>
-      </li>
-      <li>
-        <Office name="Billund" invert={invert}>
-          24 Lego Allé
+          Av. Universitária, s/n - Cidade Universitária
           <br />
-          7190, Billund, Denmark
+          UniEVANGÉLICA (Universidade Evangélica de Goiás)
         </Office>
       </li>
     </ul>

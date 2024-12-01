@@ -81,8 +81,8 @@ function Header({
           />
         </Link>
         <div className="flex items-center gap-x-8">
-          <Button href="/contact" invert={invert}>
-            Contact us
+          <Button href="/cadastre-se" invert={invert}>
+            Seja um doador
           </Button>
           <button
             ref={toggleRef}
@@ -92,7 +92,7 @@ function Header({
             aria-controls={panelId}
             className={clsx(
               'group -m-2.5 rounded-full p-2.5 transition',
-              invert ? 'hover:bg-[#071108]' : 'hover:bg-[#E50808]',
+              invert ? 'hover:bg-primary' : 'hover:bg-primary',
             )}
             aria-label="Toggle navigation"
           >
@@ -113,7 +113,7 @@ function Header({
 
 function NavigationRow({ children }: { children: React.ReactNode }) {
   return (
-    <div className="even:mt-px sm:bg-[#FFC2C2]">
+    <div className="even:mt-px sm:bg-secondary">
       <Container>
         <div className="grid grid-cols-1 sm:grid-cols-2">{children}</div>
       </Container>
@@ -131,23 +131,23 @@ function NavigationItem({
   return (
     <Link
       href={href}
-      className="group relative isolate -mx-6 bg-[#FFC2C2] px-6 py-10 even:mt-px sm:mx-0 sm:px-0 sm:py-16 sm:odd:pr-16 sm:even:border-l sm:even:border-[#E50808] sm:even:pl-16"
+      className="group relative isolate -mx-6 bg-secondary px-6 py-10 even:mt-px sm:mx-0 sm:px-0 sm:py-16 sm:odd:pr-16 sm:even:border-l sm:even:border-secondary sm:even:pl-16 text-white"
     >
       {children}
-      <span className="absolute inset-y-0 -z-10 w-screen bg-[#E50808] opacity-0 transition group-odd:right-0 group-even:left-0 group-hover:opacity-100" />
+      <span className="absolute inset-y-0 -z-10 w-screen bg-primary opacity-0 transition group-odd:right-0 group-even:left-0 group-hover:opacity-100" />
     </Link>
   )
 }
 
 function Navigation() {
   return (
-    <nav className="mt-px font-display text-5xl font-medium tracking-tight text-[#333333]">
+    <nav className="mt-px font-display text-5xl font-medium tracking-tight text-textSecondary">
       <NavigationRow>
-        <NavigationItem href="/work">Our Work</NavigationItem>
-        <NavigationItem href="/about">About Us</NavigationItem>
+        <NavigationItem href="/work">Estudos de caso</NavigationItem>
+        <NavigationItem href="/about">Sobre nós</NavigationItem>
       </NavigationRow>
       <NavigationRow>
-        <NavigationItem href="/process">Our Process</NavigationItem>
+        <NavigationItem href="/process">Saiba mais</NavigationItem>
         <NavigationItem href="/blog">Blog</NavigationItem>
       </NavigationRow>
     </nav>
@@ -183,7 +183,7 @@ function RootLayoutInner({ children }: { children: React.ReactNode }) {
     <MotionConfig transition={shouldReduceMotion ? { duration: 0 } : undefined}>
       <header>
         <div
-          className="absolute left-0 right-0 top-2 z-40 pt-14"
+          className="absolute left-0 right-0 top-2 z-40 pt-14 "
           aria-hidden={expanded ? 'true' : undefined}
         >
           <Header
@@ -204,11 +204,11 @@ function RootLayoutInner({ children }: { children: React.ReactNode }) {
           layout
           id={panelId}
           style={{ height: expanded ? 'auto' : '0.5rem' }}
-          className="relative z-50 overflow-hidden bg-[#E50808] pt-2"
+          className="relative z-50 overflow-hidden bg-secondary pt-2"
           aria-hidden={expanded ? undefined : 'true'}
         >
           <motion.div layout className="bg-neutral-800">
-            <div ref={navRef} className="bg-neutral-950 pb-16 pt-14">
+            <div ref={navRef} className="bg-secondary pb-16 pt-14">
               <Header
                 invert
                 panelId={panelId}
@@ -224,12 +224,12 @@ function RootLayoutInner({ children }: { children: React.ReactNode }) {
               />
             </div>
             <Navigation />
-            <div className="relative bg-neutral-950 before:absolute before:inset-x-0 before:top-0 before:h-px before:bg-neutral-800">
+            <div className="relative bg-secondary before:absolute before:inset-x-0 before:top-0 before:h-px before:bg-neutral-800">
               <Container>
                 <div className="grid grid-cols-1 gap-y-10 pb-16 pt-10 sm:grid-cols-2 sm:pt-16">
                   <div>
-                    <h2 className="font-display text-base font-semibold text-[#333333]">
-                      Our offices
+                    <h2 className="font-display text-base font-semibold text-textPrimary">
+                      Onde estamos
                     </h2>
                     <Offices
                       invert
@@ -237,8 +237,8 @@ function RootLayoutInner({ children }: { children: React.ReactNode }) {
                     />
                   </div>
                   <div className="sm:border-l sm:border-transparent sm:pl-16">
-                    <h2 className="font-display text-base font-semibold text-[#333333]">
-                      Follow us
+                    <h2 className="font-display text-base font-semibold text-textPrimary">
+                      Nossas redes sociais
                     </h2>
                     <SocialMedia className="mt-6" invert />
                   </div>
