@@ -163,7 +163,7 @@ export default async function Work() {
         className="mt-24 sm:mt-32 lg:mt-40"
         client={{ name: 'Mail Smirk', logo: logoMailSmirk }}
       >
-        Buscamos o <em>AEDO Connect</em> por sua inovação. Eles nos entregaram 
+        Buscamos o AEDO Connect por sua inovação. Eles nos entregaram 
         um sistema confiável que fez toda a diferença.
       </Testimonial>
 
