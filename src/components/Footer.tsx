@@ -2,8 +2,9 @@ import Link from 'next/link';
 
 import { Container } from '@/components/Container';
 import { FadeIn } from '@/components/FadeIn';
-import { Logo } from '@/components/Logo';
+import { Logo, Logomark } from '@/components/Logo';
 import { socialMediaProfiles } from '@/components/SocialMedia';
+import { useState } from 'react';
 
 const navigation = [
   {
@@ -107,6 +108,7 @@ function NewsletterForm() {
 }
 
 export function Footer() {
+  const [isHovered, setIsHovered] = useState(false);
   return (
     <Container as="footer" className="mt-24 w-full sm:mt-32 lg:mt-40">
       <FadeIn>
@@ -117,9 +119,23 @@ export function Footer() {
           </div>
         </div>
         <div className="mb-20 mt-24 flex flex-wrap items-end justify-between gap-x-6 gap-y-4 border-t border-[#E50808] pt-12">
-          <Link href="/" aria-label="Página inicial">
-            <Logo className="h-8" fillOnHover />
-          </Link>
+        <Link
+          href="/"
+          aria-label="Home"
+          onMouseEnter={() => setIsHovered(true)}
+          onMouseLeave={() => setIsHovered(false)}
+        >
+          <Logomark
+            className="h-8 sm:hidden"
+            invert
+            filled={isHovered}
+          />
+          <Logo
+            className="hidden h-8 sm:block"
+            invert
+            filled={isHovered}
+          />
+        </Link>
           <p className="text-sm text-neutral-700">
             © AEDO Connect {new Date().getFullYear()}
           </p>
