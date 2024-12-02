@@ -10,8 +10,8 @@ const navigation = [
   {
     title: 'Histórias de Sucesso',
     links: [
-      { title: 'Maria Silva', href: '/EstudosdeCaso/family-fund' },
-      { title: 'Projeto Vida', href: '/EstudosdeCaso/unseal' },
+      { title: 'Maria Silva', href: '/EstudosdeCaso/Maria' },
+      { title: 'Projeto Vida', href: '/EstudosdeCaso/HospitalSaoVitalis' },
       {
         title: (
           <>

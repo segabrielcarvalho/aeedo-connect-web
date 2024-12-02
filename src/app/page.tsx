@@ -9,14 +9,14 @@ import { SectionIntro } from '@/components/SectionIntro'
 import { Testimonial } from '@/components/Testimonial'
 import { type CaseStudy, type MDXEntry, loadCaseStudies } from '@/lib/mdx'
 import logoBrightPath from '@/images/clients/bright-path/logo-light.svg'
-import logoFamilyFund from '@/images/clients/family-fund/logo-light.svg'
+import logoFamilyFund from '@/images/clients/HospitalEsperanca/logo-light.svg'
 import logoGreenLife from '@/images/clients/green-life/logo-light.svg'
 import logoHomeWork from '@/images/clients/home-work/logo-light.svg'
 import logoMailSmirk from '@/images/clients/mail-smirk/logo-light.svg'
 import logoNorthAdventures from '@/images/clients/north-adventures/logo-light.svg'
-import logoPhobiaDark from '@/images/clients/phobia/logo-dark.svg'
-import logoPhobiaLight from '@/images/clients/phobia/logo-light.svg'
-import logoUnseal from '@/images/clients/unseal/logo-light.svg'
+import logoPhobiaDark from '@/images/clients/HospitalVidaPlena/logo-dark.svg'
+import logoPhobiaLight from '@/images/clients/HospitalVidaPlena/logo-light.svg'
+import logoUnseal from '@/images/clients/HospitalSaoVitalis/logo-light.svg'
 
 const clients = [
   ['Phobia', logoPhobiaLight],
