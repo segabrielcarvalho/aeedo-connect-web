@@ -17,7 +17,7 @@ export default function FAQPage() {
       <Container className="mt-16">
         <div className="faq bg-primary p-6 rounded-lg shadow-md">
           <details className="mb-4">
-            <summary className="cursor-pointer font-medium text-lg text-primary bg-backgroundMain p-3 rounded-md shadow-sm hover:bg-backgroundAlt transition">
+            <summary className="cursor-pointer font-medium text-lg text-secondary bg-backgroundMain p-3 rounded-md shadow-sm hover:bg-backgroundAlt transition">
               Quais órgãos poderei doar?
             </summary>
             <p className="mt-2 text-sm text-textSecondary bg-backgroundMain p-3 rounded-md">
@@ -26,7 +26,7 @@ export default function FAQPage() {
             </p>
           </details>
           <details className="mb-4">
-            <summary className="cursor-pointer font-medium text-lg text-primary bg-backgroundMain p-3 rounded-md shadow-sm hover:bg-backgroundAlt transition">
+            <summary className="cursor-pointer font-medium text-lg text-secondary bg-backgroundMain p-3 rounded-md shadow-sm hover:bg-backgroundAlt transition">
               Poderei acrescentar outros órgãos a serem doados em uma AEDO que
               já fiz anteriormente?
             </summary>
@@ -37,7 +37,7 @@ export default function FAQPage() {
             </p>
           </details>
           <details className="mb-4">
-            <summary className="cursor-pointer font-medium text-lg text-primary bg-backgroundMain p-3 rounded-md shadow-sm hover:bg-backgroundAlt transition">
+            <summary className="cursor-pointer font-medium text-lg text-secondary bg-backgroundMain p-3 rounded-md shadow-sm hover:bg-backgroundAlt transition">
               Terei custos para fazer minha AEDO?
             </summary>
             <p className="mt-2 text-sm text-textSecondary bg-backgroundMain p-3 rounded-md">
@@ -45,7 +45,7 @@ export default function FAQPage() {
             </p>
           </details>
           <details className="mb-4">
-            <summary className="cursor-pointer font-medium text-lg text-primary bg-backgroundMain p-3 rounded-md shadow-sm hover:bg-backgroundAlt transition">
+            <summary className="cursor-pointer font-medium text-lg text-secondary bg-backgroundMain p-3 rounded-md shadow-sm hover:bg-backgroundAlt transition">
               Quem pode autorizar a doação de órgãos em caso de falecimento?
             </summary>
             <p className="mt-2 text-sm text-textSecondary bg-backgroundMain p-3 rounded-md">
