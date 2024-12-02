@@ -2,7 +2,6 @@ import { type Metadata } from 'next'
 import Image from 'next/image'
 import Link from 'next/link'
 import FAQPage from './FAQ/faq'
-
 import { ContactSection } from '@/components/ContactSection'
 import { Container } from '@/components/Container'
 import { FadeIn, FadeInStagger } from '@/components/FadeIn'

@@ -12,20 +12,9 @@ import { SectionIntro } from '@/components/SectionIntro'
 import { StatList, StatListItem } from '@/components/StatList'
 import { List, ListItem } from '@/components/List'
 import { StylizedImage } from '@/components/StylizedImage'
-import imageLaptop from '@/images/laptop.jpg'
-import imageAngelaFisher from '@/images/team/angela-fisher.jpg'
-import imageBenjaminRussel from '@/images/team/benjamin-russel.jpg'
-import imageBlakeReid from '@/images/team/blake-reid.jpg'
-import imageChelseaHagon from '@/images/team/chelsea-hagon.jpg'
-import imageDriesVincent from '@/images/team/dries-vincent.jpg'
-import imageEmmaDorsey from '@/images/team/emma-dorsey.jpg'
-import imageJeffreyWebb from '@/images/team/jeffrey-webb.jpg'
-import imageKathrynMurphy from '@/images/team/kathryn-murphy.jpg'
-import imageLeonardKrasner from '@/images/team/leonard-krasner.jpg'
-import imageLeslieAlexander from '@/images/team/leslie-alexander.jpg'
-import imageMichaelFoster from '@/images/team/michael-foster.jpg'
-import imageWhitneyFrancis from '@/images/team/whitney-francis.jpg'
+import imageOrgao from '@/images/orgao.jpg'
 import { loadArticles } from '@/lib/mdx'
+import images from '@/images'
 
 function Culture() {
   return (
@@ -63,18 +52,18 @@ const team = [
       {
         name: 'Gabriel Fernandes Carvalho',
         role: 'Engenheiro de Dados / Líder de Operações',
-        image: { src: imageKathrynMurphy },
+        image: { src: images.team.carvalho.src },
 
       },
       {
         name: 'Guilherme Rezende Damaceno',
         role: 'Arquiteto de Software / Líder Técnico',
-        image: { src: imageEmmaDorsey },
+        image: { src: images.team.guilherme.src },
       },
       {
         name: 'Ruan de Freitas Moreira',
         role: 'Analista de Requisitos / Líder de Qualidade',
-        image: { src: imageJeffreyWebb },
+        image: { src: images.team.ruan.src },
 
       },
     ],
@@ -85,33 +74,33 @@ const team = [
       {
         name: 'Calebe Rodrigues Rolim',
         role: 'Coordenador de Operações',
-        image: { src: imageAngelaFisher },
+        image: { src: images.team.calebe.src },
       },
       {
         name: 'Filipe Mota Tocchio Rodrigues',
         role: 'Product Owner',
-        image: { src: imageBenjaminRussel },
+        image: { src: images.team.motta.src },
       },
       {
         name: 'Filipe Gideão Rodrigues',
         role: 'Desenvolvedor Front-End',
-        image: { src: imageBlakeReid },
+        image: { src: images.team.gildeao.src },
 
       },
       {
         name: 'Gabriel Reis Costa',
         role: 'Designer UX/UI',
-        image: { src: imageChelseaHagon },
+        image: { src: images.team.reis.src },
       },
       {
         name: 'José Vitor Pereira Silva',
         role: 'Analista de Qualidade',
-        image: { src: imageLeonardKrasner },
+        image: { src: images.team.jose.src },
       },
       {
         name: 'Gustavo Silva Batista Rosa',
         role: 'Desenvolvedor Back-End',
-        image: { src: imageMichaelFoster },
+        image: { src: images.team.gustavo.src },
       },
     ],
   },
@@ -136,7 +125,7 @@ function Services() {
           <div className="flex justify-center lg:w-1/2 lg:justify-end lg:pr-12">
             <FadeIn className="w-[33.75rem] flex-none lg:w-[45rem]">
               <StylizedImage
-                src={imageLaptop}
+                src={imageOrgao}
                 sizes="(min-width: 1024px) 41rem, 31rem"
                 className="justify-center lg:justify-end"
               />
@@ -193,6 +182,8 @@ function Team() {
                         <div className="group relative overflow-hidden rounded-3xl bg-neutral-100">
                           <Image
                             alt=""
+                            width={150}
+                            height={300}
                             {...person.image}
                             className="h-96 w-full object-cover grayscale transition duration-500 motion-safe:group-hover:scale-105"
                           />

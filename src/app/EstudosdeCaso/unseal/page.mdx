@@ -1,0 +1,62 @@
+import logo from '@/images/clients/unseal/logomark-light.svg'
+import imageHero from './hero.jpg'
+import imageEmilySelman from './emily-selman.jpg'
+
+export const caseStudy = {
+  client: 'Registro Nacional de Doadores',
+  title: 'Simplificando o processo de registro para doadores de órgãos',
+  description:
+    'Um sistema inovador que utiliza tecnologia para conectar doadores e receptores, garantindo que vidas sejam salvas de forma mais rápida e eficiente.',
+  summary: [
+    'Desenvolvimento de uma plataforma segura para registro de doadores.',
+    'Integração com bancos de dados hospitalares para maior agilidade.',
+    'Ferramentas de análise que otimizam a busca por compatibilidade entre doadores e receptores.',
+  ],
+  logo,
+  image: { src: imageHero },
+  date: '2022-10',
+  service: 'Desenvolvimento de Plataforma e Integração',
+  testimonial: {
+    author: { name: 'Dra. Emily Selman', role: 'Coordenadora de Projetos' },
+    content:
+      'O Registro Nacional de Doadores revolucionou a maneira como gerenciamos informações críticas, tornando o processo mais eficiente e acessível para todos.',
+  },
+}
+
+export const metadata = {
+  title: `${caseStudy.client} Case Study`,
+  description: caseStudy.description,
+}
+
+## História
+
+O Registro Nacional de Doadores foi criado com o objetivo de tornar o processo de registro para doação de órgãos mais acessível e eficiente. Antes do sistema, o processo era fragmentado, com bancos de dados hospitalares desconectados e dificuldades na busca por doadores compatíveis.
+
+A nova plataforma oferece uma interface amigável para doadores se registrarem e fornece ferramentas avançadas para profissionais de saúde. Por meio de algoritmos de compatibilidade e integração com bancos de dados, o tempo médio para encontrar doadores e receptores foi reduzido significativamente.
+
+Essa inovação já impactou milhares de vidas, conectando doadores e receptores de forma mais rápida e salvando vidas preciosas.
+
+## O que realizamos
+
+<TagList>
+  <TagListItem>Desenvolvimento da Plataforma</TagListItem>
+  <TagListItem>Integração com Bancos de Dados</TagListItem>
+  <TagListItem>Algoritmos de Compatibilidade</TagListItem>
+  <TagListItem>Segurança e Confiabilidade</TagListItem>
+</TagList>
+
+<Blockquote
+  author={{ name: 'Dra. Emily Selman', role: 'Coordenadora de Projetos' }}
+  image={{ src: imageEmilySelman }}
+>
+  O Registro Nacional de Doadores revolucionou a maneira como gerenciamos
+  informações críticas, tornando o processo mais eficiente e acessível para
+  todos.
+</Blockquote>
+
+<StatList>
+  <StatListItem value="50%" label="Redução no tempo de busca por doadores" />
+  <StatListItem value="95%" label="Taxa de compatibilidade otimizada" />
+  <StatListItem value="1M+" label="Doadores registrados" />
+  <StatListItem value="100k+" label="Vidas salvas até agora" />
+</StatList>
