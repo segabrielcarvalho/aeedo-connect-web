@@ -10,15 +10,15 @@ const navigation = [
   {
     title: 'Histórias de Sucesso',
     links: [
-      { title: 'Maria Silva', href: '/EstudosdeCaso/Maria' },
-      { title: 'Projeto Vida', href: '/EstudosdeCaso/HospitalSaoVitalis' },
+      { title: 'Maria Silva', href: '/CaseStudies/Maria' },
+      { title: 'Projeto Vida', href: '/CaseStudies/HospitalSaoVitalis' },
       {
         title: (
           <>
             Ver todas <span aria-hidden="true">&rarr;</span>
           </>
         ),
-        href: '/EstudosdeCaso',
+        href: '/CaseStudies',
       },
     ],
   },
