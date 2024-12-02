@@ -78,7 +78,7 @@ function CaseStudies({
         <FadeInStagger className="grid grid-cols-1 gap-8 lg:grid-cols-3">
           {caseStudies.map((caseStudy) => (
             <FadeIn key={caseStudy.href} className="flex">
-              <article className="relative flex w-full flex-col rounded-3xl p-6 bg-[#000000] border border-[#E50808] transition-all duration-300 hover:bg-[#E50808] hover:shadow-lg sm:p-8">
+              <article className="relative flex w-full flex-col rounded-3xl p-6 bg-secondary transition-all duration-300 hover:bg-primary hover:shadow-lg sm:p-8">
                 <h3 className='text-[#FFFFFF]'>
                   <Link href={caseStudy.href}>
                     <span className="absolute inset-0 rounded-3xl" />
