@@ -1,14 +1,14 @@
 import { type Metadata } from 'next'
 import Image from 'next/image'
 import Link from 'next/link'
+import FAQPage from './FAQ/faq'
 
 import { ContactSection } from '@/components/ContactSection'
 import { Container } from '@/components/Container'
 import { FadeIn, FadeInStagger } from '@/components/FadeIn'
-import { List, ListItem } from '@/components/List'
 import { SectionIntro } from '@/components/SectionIntro'
-import { StylizedImage } from '@/components/StylizedImage'
 import { Testimonial } from '@/components/Testimonial'
+import { type CaseStudy, type MDXEntry, loadCaseStudies } from '@/lib/mdx'
 import logoBrightPath from '@/images/clients/bright-path/logo-light.svg'
 import logoFamilyFund from '@/images/clients/family-fund/logo-light.svg'
 import logoGreenLife from '@/images/clients/green-life/logo-light.svg'
@@ -18,8 +18,6 @@ import logoNorthAdventures from '@/images/clients/north-adventures/logo-light.sv
 import logoPhobiaDark from '@/images/clients/phobia/logo-dark.svg'
 import logoPhobiaLight from '@/images/clients/phobia/logo-light.svg'
 import logoUnseal from '@/images/clients/unseal/logo-light.svg'
-import imageLaptop from '@/images/laptop.jpg'
-import { type CaseStudy, type MDXEntry, loadCaseStudies } from '@/lib/mdx'
 
 const clients = [
   ['Phobia', logoPhobiaLight],
@@ -121,7 +119,6 @@ function CaseStudies({
 }
 
 
-
 export const metadata: Metadata = {
   description:
     'We are a development studio working at the intersection of design and technology.',
@@ -143,10 +140,11 @@ export default async function Home() {
         </FadeIn>
       </Container>
 
-
       <Clients />
 
       <CaseStudies caseStudies={caseStudies} />
+
+      <FAQPage />
 
       <Testimonial
         className="mt-24 sm:mt-32 lg:mt-40 rounded-xl p-6 shadow-lg"
