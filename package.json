@@ -6,6 +6,7 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
+    "start:dev": "dotenv -e ./.env.local -- next dev",
     "lint": "next lint"
   },
   "browserslist": "defaults, not ie <= 11",
@@ -22,6 +23,7 @@
     "acorn-jsx": "^5.3.2",
     "autoprefixer": "^10.4.7",
     "clsx": "^2.1.0",
+    "dotenv-cli": "^7.4.4",
     "escape-string-regexp": "^5.0.0",
     "fast-glob": "^3.2.12",
     "framer-motion": "^10.15.2",
