@@ -81,7 +81,7 @@ function Header({
           />
         </Link>
         <div className="flex items-center gap-x-8">
-          <Button href="/cadastre-se" invert={invert}>
+          <Button href="http://localhost:3003/auth/register" invert={invert}>
             Seja um doador
           </Button>
           <button
